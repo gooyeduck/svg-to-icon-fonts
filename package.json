@@ -1,0 +1,22 @@
+{
+  "name": "invizo-icon-fonts",
+  "version": "1.0.0",
+  "description": "___",
+  "main": "index.js",
+  "author": "Satyajit Talukder",
+  "license": "MIT",
+  "config": {
+    "svgDir": "my-icons",
+    "iconFontDir": "icon-dist"
+  },
+  "scripts": {
+    "delMakeIconFontDir": "del-cli $npm_package_config_iconFontDir && mkdirp $npm_package_config_iconFontDir",
+    "iconFonts": "fantasticon $npm_package_config_svgDir -o $npm_package_config_iconFontDir -g css scss sass html json ts",
+    "createIconFonts": "npm run delMakeIconFontDir && npm run iconFonts"
+  },
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "fantasticon": "^2.0.0",
+    "mkdirp": "^3.0.1"
+  }
+}

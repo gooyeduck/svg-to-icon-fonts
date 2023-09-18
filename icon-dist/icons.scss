@@ -1,0 +1,59 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("./icons.eot?453d0eace43c810fe99628de0aa4c151#iefix") format("embedded-opentype"),
+url("./icons.woff2?453d0eace43c810fe99628de0aa4c151") format("woff2"),
+url("./icons.woff?453d0eace43c810fe99628de0aa4c151") format("woff");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "fill-2": "\f101",
+    "fill-3": "\f102",
+    "fill-4": "\f103",
+    "fill-5": "\f104",
+    "line-1": "\f105",
+    "line-2": "\f106",
+    "line-3": "\f107",
+    "line-4": "\f108",
+    "line-5": "\f109",
+);
+
+.icon-fill-2:before {
+    content: map-get($icons-map, "fill-2");
+}
+.icon-fill-3:before {
+    content: map-get($icons-map, "fill-3");
+}
+.icon-fill-4:before {
+    content: map-get($icons-map, "fill-4");
+}
+.icon-fill-5:before {
+    content: map-get($icons-map, "fill-5");
+}
+.icon-line-1:before {
+    content: map-get($icons-map, "line-1");
+}
+.icon-line-2:before {
+    content: map-get($icons-map, "line-2");
+}
+.icon-line-3:before {
+    content: map-get($icons-map, "line-3");
+}
+.icon-line-4:before {
+    content: map-get($icons-map, "line-4");
+}
+.icon-line-5:before {
+    content: map-get($icons-map, "line-5");
+}
