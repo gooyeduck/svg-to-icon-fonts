@@ -1,4 +1,3 @@
-![Collapse & Expand HTML Block Elements CSS & JS](./readme/images/svg-to-icon-fonts-835x346.jpg)
 
 ## Intro
 To run this project first you have to install the npm packages with
